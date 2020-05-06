@@ -1,0 +1,20 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "node_modules",
+    "lib",
+    "jest.config.js"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    "no-console": "off"
+  }
+}
