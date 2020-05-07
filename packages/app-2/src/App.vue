@@ -15,7 +15,7 @@ export default {
     HelloWorld
   },
   created() {
-    console.log('hello wordl')
+    console.log('hellfdfdsfdffdsfdasfsafdso wordl')
     return getCatFacts().then(console.log).catch(console.error)
   }
 }

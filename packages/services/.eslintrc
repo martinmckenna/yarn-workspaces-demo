@@ -3,7 +3,11 @@
   "ignorePatterns": [
     "node_modules",
     "lib",
-    "jest.config.js"
+    "jest.config.js",
+    "webpack.config.js",
+    "index.js",
+    "index.d.ts",
+    "webpack.dev.config.js"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [
@@ -15,6 +19,6 @@
     "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
-    "no-console": "off"
+    "no-console": "error"
   }
 }

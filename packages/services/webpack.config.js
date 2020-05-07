@@ -10,6 +10,20 @@ module.exports = {
     library: 'my-lib',
     libraryTarget: 'umd'
   },
+  module: {
+    rules: [
+      {
+        test: /\.(j|t)sx?$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+          emitError: true,
+          failOnError: true,
+          eslintPath: '../../node_modules/eslint'
+        }
+      },
+    ],
+  },
   plugins: [
     new NpmDtsPlugin({
       logLevel: 'warn'

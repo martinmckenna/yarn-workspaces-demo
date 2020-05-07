@@ -8,7 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start:2": "concurrently \"yarn workspace services start\" \"yarn workspace app-2 start --color\" -n 'services,app2' -k",
+    "start:2": "concurrently \"yarn workspace services start\" \"yarn workspace app-2 start --color\" -n 'services,app2' -k -raw",
     "build:2": "yarn workspace services build && yarn workspace app-2 build",
     "clean": "find . -name \"node_modules\" -exec rm -rf '{}' +"
   },

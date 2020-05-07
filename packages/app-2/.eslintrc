@@ -2,6 +2,8 @@
   "root": true,
   "ignorePatterns": [
     "node_modules",
+    "index.js",
+    "index.d.ts",
     "lib",
     "dist"
   ],
@@ -15,5 +17,7 @@
   "parserOptions": {
     "parser": "babel-eslint"
   },
-  "rules": {}
+  "rules": {
+    "no-console": "off"
+  }
 }
