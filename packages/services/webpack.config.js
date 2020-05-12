@@ -18,8 +18,7 @@ module.exports = {
         loader: 'eslint-loader',
         options: {
           emitError: true,
-          failOnError: true,
-          eslintPath: '../../node_modules/eslint'
+          failOnError: true
         }
       },
     ],
